@@ -4,7 +4,12 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            TemperatureConverter converter = new TemperatureConverter();
+            
+            decimal tempCelsius = converter.ToCelsius();
+
+            Console.WriteLine($"A temperatura em Celsius é: {tempCelsius}°C");
+            Console.ReadLine();
         }
     }
 }
