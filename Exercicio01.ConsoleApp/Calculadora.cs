@@ -2,14 +2,16 @@
 {
     class Calculadora
     {
-        public decimal comprimento = 10m;
-        public decimal largura = 10m;
-        public decimal altura = 6m;
+        public double comprimento = 2;
+        public double largura = 10;
+        public double altura = 12;
 
-        public decimal Volume()
+        public double ObterVolume()
         {
-            decimal volume = comprimento * largura * altura;
+            double volume = comprimento * largura * altura;
             return volume;
         }
+
     }
 }
+

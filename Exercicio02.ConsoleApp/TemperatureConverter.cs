@@ -2,12 +2,12 @@
 {
     internal class TemperatureConverter 
     {
-        public decimal fahrenheit = 150;
-        public decimal celsius;
+        public double fahrenheit = 150;
+        public double celsius;
 
-        public decimal ToCelsius()
+        public double ToCelsius()
         {
-            celsius = (fahrenheit - 32m) / 1.8m;
+            celsius = (fahrenheit - 32) / 1.8;
             return Math.Round(celsius, 2); 
         }
     }

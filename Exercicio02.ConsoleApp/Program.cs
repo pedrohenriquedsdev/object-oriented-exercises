@@ -6,7 +6,7 @@
         {
             TemperatureConverter converter = new TemperatureConverter();
             
-            decimal tempCelsius = converter.ToCelsius();
+            double tempCelsius = converter.ToCelsius();
 
             Console.WriteLine($"A temperatura em Celsius é: {tempCelsius}°C");
             Console.ReadLine();

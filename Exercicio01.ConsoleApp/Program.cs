@@ -1,16 +1,18 @@
 ﻿namespace Exercicio01.ConsoleApp
 {
-    internal class Program 
+
+    internal class Program
     {
         static void Main(string[] args)
         {
 
-            Calculadora calcular = new Calculadora();
-            decimal volume = calcular.Volume();
+            Calculadora calc = new Calculadora(); //instânciando o objeto
+            double volume = calc.ObterVolume();
 
-            Console.WriteLine(volume);
+            Console.WriteLine("Volume da caixa retangular: " + volume);
             Console.ReadLine();
 
         }
     }
 }
+

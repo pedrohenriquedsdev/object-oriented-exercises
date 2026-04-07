@@ -2,35 +2,11 @@
 
 namespace Exercicio09.ConsoleApp
 {
-    class CalculadoraMediaHarmonica
-    {
-        private double nota1;
-        private double nota2;
-        private double nota3;
-
-        public CalculadoraMediaHarmonica(double nota1, double nota2, double nota3)
-        {
-            this.nota1 = nota1;
-            this.nota2 = nota2;
-            this.nota3 = nota3;
-        }
-
-        public double CalcularMediaHarmonica()
-        {
-            int quantidadeNotas = 3;
-
-            double somaDosInversos = (1.0 / nota1) + (1.0 / nota2) + (1.0 / nota3);
-            double mediaHarmonica = quantidadeNotas / somaDosInversos;
-
-            return mediaHarmonica;
-        }
-    }
-
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("=== CÁLCULO DA MÉDIA HARMÔNICA ===\n");
+            Console.WriteLine("CÁLCULO DA MÉDIA HARMÔNICA\n");
 
             Console.Write("Digite a primeira nota: ");
             double nota1 = Convert.ToDouble(Console.ReadLine());
@@ -51,11 +27,8 @@ namespace Exercicio09.ConsoleApp
             CalculadoraMediaHarmonica calculadora = new CalculadoraMediaHarmonica(nota1, nota2, nota3);
             double mediaHarmonica = calculadora.CalcularMediaHarmonica();
 
-            double mediaAritmetica = (nota1 + nota2 + nota3) / 3;
-
-            Console.WriteLine("\n--- RESULTADO ---");
+            Console.WriteLine("\nRESULTADO");
             Console.WriteLine($"Notas informadas: {nota1:F2}, {nota2:F2}, {nota3:F2}");
-            Console.WriteLine($"Média Aritmética: {mediaAritmetica:F2}");
             Console.WriteLine($"Média Harmônica: {mediaHarmonica:F2}");
 
             Console.ReadLine();
