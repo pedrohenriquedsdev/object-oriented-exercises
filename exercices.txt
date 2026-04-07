@@ -1,9 +1,9 @@
 1) Crie um programa para calcular o volume de uma caixa retangular X
 
 2) Crie um programa para converter a temperatura de graus Fahrenheit para graus
-Celsius 
+Celsius X
 
-3) Crie um programa para calcular o volume de um Cilindro
+3) Crie um programa para calcular o volume de um Cilindro 
 
 4) Crie um programa para calcular o consumo de combustível por Km. Deverá ser
 informado a kilometragem Inicial e Final do Percurso do Veículo. Deverá ser
@@ -24,3 +24,5 @@ percentual (informado pelo usuário) sobre o total de vendas.
 
 10) Crie um programa para calcular a média ponderada de duas provas realizadas
 por um aluno
+
+fluxo recomendado -> Sequencial, class, métodos, instânciar e separar em .cs
